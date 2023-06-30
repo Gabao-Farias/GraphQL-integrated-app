@@ -15,7 +15,7 @@ export default class UserResolver {
   async createUser(@Arg("name") name: string) {
     const user = { id: randomUUID(), name };
 
-    this.data.push();
+    this.data.push(user);
 
     return user;
   }
